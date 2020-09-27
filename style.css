@@ -120,7 +120,7 @@ nav ul li a {
     width: 10%;
     max-width: 150px;
     display: flex;
-    position: fixed;
+    position: absolute;
     flex-direction: column;
     flex-wrap: wrap;
     flex-shrink: 1;
@@ -143,9 +143,69 @@ nav ul li a {
     line-height: 22px;
 }
 
-i {
+.navbar i {
     font-size: 20px;
 }
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 150px 50px;
+}
+
+.productplate {
+    min-height: 500px;
+    width: calc(80%/3);
+    text-align: center;
+    background-color: #ced4da;
+    position: relative;
+    border-radius: 10%;
+}
+
+.iconcircle {
+    height: 90px;
+    width: 90px;
+    border: 1px solid #073b4c;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: -20%;
+    transform: translate(-50%, 50%);
+    background-color: #118ab2;
+}
+
+.productplate p {
+    font-size: 22px;
+    margin: 50px 20px;
+    padding: 5px 10px;
+    color: black;
+}
+
+.productplate i {
+    padding: 10px;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.productplate ul li {
+    height: 50px;
+    width: 150px;
+    line-height: 50px;
+    background-color: #118ab2;
+    box-shadow: 10px 10px #052d3a;
+    text-align: center;
+    margin: 20px auto;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
 
 /* HOVERS */
 
@@ -159,4 +219,12 @@ nav ul li:hover {
 .sidebar ul li:hover a, .sidebar ul li:hover i{
     color: #ffba19;
     transform: scale(1.3);
+}
+
+.productplate ul li:hover {
+    cursor: pointer;
+}
+
+.productplate ul li:hover a {
+    color: #ffbf2a;
 }

@@ -87,7 +87,7 @@ nav {
     justify-content: flex-end;
     padding: 0 10px;
     position: absolute;
-    top: 18%;
+    top: 120px;
     right: 0;
     flex-shrink: 1;
     flex-wrap: wrap;
@@ -147,7 +147,7 @@ nav ul li a {
     font-size: 20px;
 }
 
-main {
+.main {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -155,7 +155,7 @@ main {
 }
 
 .productplate {
-    min-height: 500px;
+    min-height: 450px;
     width: calc(80%/3);
     text-align: center;
     background-color: #ced4da;
@@ -205,7 +205,11 @@ main {
     transform: translateX(-50%);
 }
 
-
+.bubble {
+    position: absolute;
+    z-index: -2;
+    background: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+}
 
 /* HOVERS */
 

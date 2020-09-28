@@ -206,7 +206,7 @@ article {
     height: 100vh;
     width: 100%;
     position: relative;
-    background-color: var(--mainColor);
+    background-color: #1f223b;
     border-top: 2px solid var(--plateColor);
     overflow: hidden;
 }
@@ -228,6 +228,7 @@ article div p {
     padding: 5px;
     margin: 10px 0;
     overflow: hidden;
+    color: var(--mainColor);
 }
 
 article div img {
@@ -270,6 +271,14 @@ article div:nth-child(2) {
 article div:nth-child(3) {
     bottom: 10%;
     left: -40%;
+}
+
+footer {
+    height: 5vh;
+    width: 100%;
+    background-color: var(--mainColor);
+    line-height: 5vh;
+    padding: 0 20px;
 }
 
 /* HOVERS */

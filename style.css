@@ -19,15 +19,6 @@
 
 /* KEYFRAMES */
 
-@keyframes buttonBackground{
-    from {
-        background-color: transparent;
-    }
-    to {
-        background-color: rgba(22, 197, 255, 0.42);
-    }
-}
-
 /* BODY */
 
 header {
@@ -215,7 +206,9 @@ article {
     height: 100vh;
     width: 100%;
     position: relative;
-    background-color: var(--fontColor);
+    background-color: var(--mainColor);
+    border-top: 2px solid var(--plateColor);
+    overflow: hidden;
 }
 
 article div {
@@ -224,7 +217,7 @@ article div {
     grid-template-rows: repeat(4, 1fr);
     height: 300px;
     width: calc(100%/3);
-    background-color: var(--otherColor);
+    background-color: var(--plateColor);
     position: absolute;
     padding: 20px;
 }
@@ -233,7 +226,20 @@ article div p {
     grid-column: 1/3;
     grid-row: 1/4;
     padding: 5px;
+    margin: 10px 0;
     overflow: hidden;
+}
+
+article div img {
+    width: 100px;
+    grid-row: 1/5;
+    grid-column: 3/4;
+}
+
+article div ul {
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
 }
 
 article div ul li {
@@ -243,9 +249,6 @@ article div ul li {
     background-color: var(--otherColor);
     box-shadow: 10px 10px #052d3a;
     text-align: center;
-    position: absolute;
-    left: 5%;
-    bottom: 10%;
 }
 
 article div ul li a {
@@ -256,17 +259,17 @@ article div ul li a {
 
 article div:nth-child(1) {
     top: 10%;
-    left: 10%;
+    left: -40%;
 }
 
 article div:nth-child(2) {
     top: 30%;
-    right: 10%;
+    right: -40%;
 }
 
 article div:nth-child(3) {
     bottom: 10%;
-    left: 10%;
+    left: -40%;
 }
 
 /* HOVERS */
@@ -287,5 +290,9 @@ nav ul li:hover {
 }
 
 .productplate ul li:hover a {
+    color:var(--mainColor);
+}
+
+article div ul li:hover a {
     color:var(--mainColor);
 }

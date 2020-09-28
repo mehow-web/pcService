@@ -211,6 +211,64 @@ nav ul li a {
     line-height: 50px;
 }
 
+article {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: var(--fontColor);
+}
+
+article div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 300px;
+    width: calc(100%/3);
+    background-color: var(--otherColor);
+    position: absolute;
+    padding: 20px;
+}
+
+article div p {
+    grid-column: 1/3;
+    grid-row: 1/4;
+    padding: 5px;
+    overflow: hidden;
+}
+
+article div ul li {
+    height: 50px;
+    width: 150px;
+    line-height: 50px;
+    background-color: var(--otherColor);
+    box-shadow: 10px 10px #052d3a;
+    text-align: center;
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+}
+
+article div ul li a {
+    display: block;
+    font-size: 18px;
+    line-height: 50px;
+}
+
+article div:nth-child(1) {
+    top: 10%;
+    left: 10%;
+}
+
+article div:nth-child(2) {
+    top: 30%;
+    right: 10%;
+}
+
+article div:nth-child(3) {
+    bottom: 10%;
+    left: 10%;
+}
+
 /* HOVERS */
 
 nav ul li:hover {
